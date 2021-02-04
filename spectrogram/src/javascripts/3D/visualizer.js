@@ -400,7 +400,7 @@ AnalyserView.prototype.drawGL = function() {
 		var discretizedYOffset = Math.floor(normalizedYOffset * (sonogram3DHeight - 1)) / (sonogram3DHeight - 1);
 
 		gl.uniform1f(sonogram3DShader.vertexYOffsetLoc, discretizedYOffset);
-		gl.uniform1f(sonogram3DShader.verticalScaleLoc, sonogram3DGeometrySize / 3.5 );
+		gl.uniform1f(sonogram3DShader.verticalScaleLoc, sonogram3DGeometrySize / 100 );
 
 		// Set up the model, view and projection matrices
 		projection.loadIdentity();
